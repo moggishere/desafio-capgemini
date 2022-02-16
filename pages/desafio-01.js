@@ -25,9 +25,13 @@ sendBtn01.addEventListener('click', e => {
     event.preventDefault();
     let send01 = document.getElementById('desafio-01').value;
 
-    alert(desafio01(send01));
+    // alert(desafio01(send01));
     
     newResult.innerHTML = desafio01(send01);
+
+    if (send01 <= 0) {
+        newResult.innerHTML = 'valor inválido';
+    }
     
 })
 
