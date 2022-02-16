@@ -48,7 +48,7 @@ function anagramCounter(currentIndex, arr) {
     return counter
 }
 
-const desafio03 = (s) => {
+const test03 = (s) => {
     const duplicatesCount = s.split('').filter((v, i) => s.indexOf(v) !== i).length
 
     if (!duplicatesCount) return 0
@@ -63,16 +63,4 @@ const desafio03 = (s) => {
     return anagramsCount
 }
 
-const result = document.getElementById('result-03');
-const newResult = document.createElement('p');
-result.appendChild(newResult);
-
-const sendBtn02 = document.getElementById('btn-desafio-03');
-sendBtn02.addEventListener('click', e => {
-    newResult.innerHTML = '';
-    e.preventDefault();
-    let send03 = document.getElementById('desafio-03').value;
-
-    newResult.innerHTML = desafio03(send03);
-
-})
+module.exports = test03;

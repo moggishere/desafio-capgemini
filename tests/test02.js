@@ -1,10 +1,6 @@
-const desafio02 = (str) => {
+const test02 = (str) => {
     let message = '';
     let missingStr = 0;
-    let passwordScore = 0;
-    // let val = new RegExp(
-    //     "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()-+]).+$"
-    // );
 
     let valLowercase = new RegExp(
         "^(?=.*[a-z]).+$"
@@ -44,21 +40,7 @@ const desafio02 = (str) => {
         message = message + '❌ FALTA CARACTERE ESPECIAL <br>'
     }
 
-
-
     return message
 }
 
-const result = document.getElementById('result-02');
-const newResult = document.createElement('p');
-result.appendChild(newResult);
-
-const sendBtn02 = document.getElementById('btn-desafio-02');
-sendBtn02.addEventListener('click', e => {
-    newResult.innerHTML = '';
-    e.preventDefault();
-    let send02 = document.getElementById('desafio-02').value;
-
-    newResult.innerHTML = desafio02(send02);
-
-})
+module.exports = test02;
