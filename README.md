@@ -7,7 +7,17 @@ https://moggishere.github.io/desafio-capgemini/
 
 ## Como realizar testes
 
+Ter instalado NPM:
 
+    npm install -g npm
+
+Instalar pacote Jest:
+
+    npm i --save-dev-jest
+
+Uma vez instalado realizar testes com o comando:
+
+    npm test
 
 ## tecnologias utilizadas
 
