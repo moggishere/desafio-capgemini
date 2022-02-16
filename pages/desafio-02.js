@@ -59,11 +59,7 @@ sendBtn02.addEventListener('click', e => {
     e.preventDefault();
     let send02 = document.getElementById('desafio-02').value;
     console.log(e)
-    
+
     newResult.innerHTML = desafio02(send02);
 
-    // if (send02 == '') {
-    //     newResult.innerHTML = 'vazio';
-    // }
-    
 })
