@@ -22,7 +22,7 @@ result.appendChild(newResult);
 const sendBtn01 = document.getElementById('btn-desafio-01');
 sendBtn01.addEventListener('click', e => {
     newResult.innerHTML = '';
-    event.preventDefault();
+    e.preventDefault();
     let send01 = document.getElementById('desafio-01').value;
 
     // alert(desafio01(send01));
