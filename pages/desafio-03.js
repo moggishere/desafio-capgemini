@@ -10,7 +10,7 @@ function getAllSubstrings(str) {
     return result
 }
 
-function isAnagram(str1, str2) {
+function anagramVerify(str1, str2) {
     const hist = {}
 
     for (let i = 0; i < str1.length; i++) {
@@ -40,7 +40,7 @@ function anagramCounter(currentIndex, arr) {
     let counter = 0
 
     for (let i = 0; i < arrRest.length; i++) {
-        if (currentElement.length === arrRest[i].length && isAnagram(currentElement, arrRest[i])) {
+        if (currentElement.length === arrRest[i].length && anagramVerify(currentElement, arrRest[i])) {
             counter++
         }
     }
@@ -72,7 +72,6 @@ sendBtn02.addEventListener('click', e => {
     newResult.innerHTML = '';
     e.preventDefault();
     let send03 = document.getElementById('desafio-03').value;
-    console.log(e)
 
     newResult.innerHTML = desafio03(send03);
 
