@@ -62,3 +62,5 @@ sendBtn02.addEventListener('click', e => {
     newResult.innerHTML = desafio02(send02);
 
 })
+
+module.exports = desafio02;

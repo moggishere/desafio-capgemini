@@ -35,6 +35,7 @@ sendBtn01.addEventListener('click', e => {
     
 })
 
+module.exports = desafio03;
 
 // let n = 8;
 // let printStr='';

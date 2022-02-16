@@ -1,0 +1,23 @@
+{
+  "name": "desafio-capgemini",
+  "version": "1.0.0",
+  "description": "Exercícios realizados para o processo seletivo da Capgemini.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moggishere/desafio-capgemini.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moggishere/desafio-capgemini/issues"
+  },
+  "homepage": "https://github.com/moggishere/desafio-capgemini#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
