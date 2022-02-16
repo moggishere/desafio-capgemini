@@ -6,6 +6,18 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moggishere/desafio-capgemini.git"
@@ -18,6 +30,7 @@
   },
   "homepage": "https://github.com/moggishere/desafio-capgemini#readme",
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "jest-html-reporter": "^3.4.2"
   }
 }
